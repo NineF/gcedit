@@ -31,6 +31,7 @@ public class LoginActivity extends BaseActivity implements LoginContract.View{
         usernameTv= (EditText) findViewById(R.id.username);
         passwordTv= (EditText) findViewById(R.id.password);
         RegisterBtn= (Button) findViewById(R.id.register);
+        mLoginPersenter=new LoginPresenter(this);
         LoginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
